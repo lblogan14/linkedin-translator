@@ -1,0 +1,21 @@
+{
+  "name": "linkedin-translator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LLM-powered translator that decodes LinkedIn posts into plain English and inflates plain sentences into LinkedIn-style posts.",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "dev:backend": "pnpm --filter @linkedin-translator/backend dev",
+    "dev:frontend": "pnpm --filter @linkedin-translator/frontend dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
